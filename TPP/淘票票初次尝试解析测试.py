@@ -188,11 +188,3 @@ class TPP(object):
 if __name__ == '__main__':
     tpp = TPP()
     tpp.run()
-
-    # {"api":"mtop.film.mtopregionapi.getallregion","data":{},"ret":["FAIL_SYS_TOKEN_EXOIRED::令牌过期"],"v":"4.0"}
-    # 正常情况下,令牌过期时,数据肯定已经获取到了
-
-    # scrapy构思,不使用redis
-    # 重写start_request方法,在其中判断数据库是否有数据,决定是否发起start_url的请求
-    # 如果存在了,直接for循环城市,得到每个城市的电影列表
-    # 有电影列表
