@@ -180,9 +180,6 @@ class TPP(object):
                             item[date] = schedule_vos
                         print(item)
                         db.movies.insert(item)
-                    break
-                break
-            break
 
 
 if __name__ == '__main__':
